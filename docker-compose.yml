@@ -1,0 +1,7 @@
+services:
+  sonarqube-mcp:
+    build: .
+    ports:
+      - "${MCP_PORT:-8070}:${MCP_PORT:-8070}"
+    env_file:
+      - .env
