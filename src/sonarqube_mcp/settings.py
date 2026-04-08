@@ -19,7 +19,7 @@ class Settings:
     mcp_name: str = os.environ.get("MCP_NAME", "sonarqube-mcp")
     mcp_host: str = os.environ.get("MCP_HOST", "127.0.0.1")
     mcp_port: int = int(os.environ.get("MCP_PORT", "8070"))
-    mcp_transport: str = os.environ.get("MCP_TRANSPORT", "http")
+    mcp_transport: str = os.environ.get("MCP_TRANSPORT", "streamable-http")
     log_level: str = os.environ.get("LOG_LEVEL", "INFO").upper()
 
 
